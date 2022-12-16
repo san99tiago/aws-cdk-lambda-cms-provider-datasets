@@ -81,7 +81,7 @@ class CMSProviderDatasetsLambdaStack(Stack):
             description="Event rule for automatically triggering {} function based on CRON.".format(self.main_resources_name),
             schedule=aws_events.Schedule.cron(
                 minute='0',
-                hour='3',
+                hour='20',
                 month='*',
                 week_day='FRI',
                 year='*'
